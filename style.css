@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Tangerine|Inconsolata|Droid+Sans&display=swap');
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #252526;
+  display: flex;
+}
+
+nav li {
+  /*flex: 1;*/
+  text-align: center;
+}
+
+nav li a {
+  display: block;
+  padding: 15px;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav li.dropdown {
+  position: relative;
+}
+
+nav .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f9f9f9;
+  /*min-width: 160px;*/
+  z-index: 1;
+}
+
+nav .dropdown-content a {
+  background-color: #252526;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.icons-bar {
+  position: fixed;
+  top: 35%;
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  padding: 8px;
+  transition: all 0.3s ease;
+}
+
+.twitter {
+  width: 60px;
+  height: 60px;
+  background-size: cover;
+  background-image: url('twitter.png');
+}
+
+.website {
+  width: 40px;
+  height: 40px;
+  margin: 0 0 10px 10px;
+  background-size: cover;
+  background-image: url('website.png');
+}
+
+.email {
+  width: 40px;
+  height: 40px;
+  margin: 10px 10px;
+  background-size: cover;
+  background-image: url('email.png');
+}
+
+.linkedin {
+  width: 40px;
+  height: 40px;
+  margin: 10px 10px;
+  background-size: cover;
+  background-image: url('linkedin.png');
+}
+
+footer {
+  position: fixed;
+  background-color: #252526;
+  color: #fff;
+  padding: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content {
+  width: 90vw;
+  height: inherit;
+  background-color: #343744;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.content #home {
+  width: inherit;
+  padding: 1.7em 5em 2em 5em;
+  background-color: #252526;
+  display: flex;
+  align-items: center;
+  color: white;
+  border-bottom: #272A2A solid 5px;
+}
+
+.content #home .image {
+  display: block;
+  height: 200px;
+  width: 200px;
+  margin: 0 10px;
+  border-radius: 50%;
+  background-color: black;
+  background-image: url(bob_foto_perfil.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content #home .title {
+  text-align: center;
+  width: 30vw;
+}
+
+.content #home .title h1 {
+  font-size: 6em;
+  margin-top: 0.4em;
+  line-height: 70%;
+}
+
+.content #home .title p {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: right;
+  margin: 0, 0, 0, 2em;
+}
+
+.content .apresentacao {
+  width: inherit;
+  padding: 30px 50px;
+  display: inline-block;
+
+}
+
+.content .apresentacao .line {
+  width: inherit;
+  height: fit-content;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: #30303A;
+  font-family: 'Roboto Slab', serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Tangerine', cursive;
+  margin: 0;
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+.content .hobby {
+  width: inherit;
+  padding: 30px 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: #30303A solid 4px;
+}
+
+.content .hobby #bolhasabao {
+  width: 200px;
+  height: 200px;
+  margin: 0 10px;
+  padding: 2px 10px;
+  background-image: url('spongebob_bubbles.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.content .hobby #karate {
+  width: 200px;
+  height: 200px;
+  margin: 0 10px;
+  padding: 2px 10px;
+  background-image: url('bobesponjakarate.jpg');
+  background-size: cover;
+}
+
+.content .hobby #cacaaguaviva {
+  width: 200px;
+  height: 200px;
+  margin: 0 10px;
+  padding: 2px 10px;
+  background-image: url('cacandoaguaviva.jpg');
+  background-size: cover;
+}
+
+.content .formacao {
+  width: inherit;
+  padding: 30px 50px;
+}
+
+.content .formacao li {
+  color: white;
+  list-style: none;
+}
+
+.content .apresentacao .line p::first-letter {
+  margin-left: 2em;
+}
+
+.content .certificados {
+  width: inherit;
+  padding: 30px 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: #30303A solid 4px;
+}
+
+.content .certificados #siricascudo {
+  width: 200px;
+  height: 200px;
+  margin: 0 10px;
+  padding: 2px 10px;
+  background-image: url('siricascudo.jpg');
+  background-size: cover;
+}
+
+.content .certificados #culinaria {
+  width: 200px;
+  height: 200px;
+  margin: 0 10px;
+  padding: 2px 10px;
+  background-image: url('culinaria.jpg');
+  background-size: cover;
+}
+
+.content .certificados #chapa {
+  width: 200px;
+  height: 200px;
+  margin: 0 10px;
+  padding: 2px 10px;
+  background-image: url('chapaquente.jpg');
+  background-size: cover;
+}
+
+.content .certificados #espatula {
+  width: 200px;
+  height: 200px;
+  margin: 0 10px;
+  padding: 2px 10px;
+  background-image: url('espatula.jpg');
+  background-size: cover;
+}
+
+.content .habilidades {
+  width: inherit;
+  padding: 30px 50px;
+}
+
+.content .habilidades li {
+  color: white;
+  list-style: none;
+}
+
+.content .aptidao {
+  width: 50vw;
+  height: 35vh;
+  padding: 30px 50px;
+  background-image: url('spongebob.gif');
+  background-size: cover;
+  margin: auto;
+}
+
+.content .borderbottom {
+  width: inherit;
+  border-bottom: #30303A solid 4px;
+  padding: 30px 50px;
+}
+
+.content .premiacoes {
+  width: inherit;
+  padding: 30px 50px;
+  display: inline-block;
+  height: fit-content;
+}
+
+.content .premios {
+  width: 50vw;
+  height: 50vh;
+  padding: 30px 50px;
+  background-image: url('funcionariodomes.gif');
+  background-size: cover;
+  margin: auto;
+}
+
+.content .contato {
+  margin: auto;
+  padding: 30px 50px;
+  display: inline-block;
+  height: fit-content;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+.content .contato input[type=text],
+select,
+textarea {
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical
+    /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style inputs with type="text", select elements and textareas */
+.content .contato input[type=email],
+select,
+textarea {
+  width: 100%;
+  /* Full width */
+  padding: 12px;
+  /* Some padding */
+  border: 1px solid #ccc;
+  /* Gray border */
+  border-radius: 4px;
+  /* Rounded borders */
+  box-sizing: border-box;
+  /* Make sure that padding and width stays in place */
+  margin-top: 6px;
+  /* Add a top margin */
+  margin-bottom: 16px;
+  /* Bottom margin */
+  resize: vertical
+    /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+.content .contato input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+.content .contato input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.content .contato h1 {
+  padding: 30px 0;
+}
+
+label {
+  color: white;
+}
