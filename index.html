@@ -120,13 +120,13 @@
 
                 <form>
                     <label for="fname">Nome</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Seu nome..">
+                    <input type="text" id="fname" name="firstname" placeholder="Seu nome.." required>
 
                     <label for="lname">Sobrenome</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Seu sobrenome..">
+                    <input type="text" id="lname" name="lastname" placeholder="Seu sobrenome.." required>
 
                     <label for="email">Email</label>
-                    <input type="email" id="emailid" placeholder="fulano@mail.com" name="email" />
+                    <input type="email" id="emailid" placeholder="fulano@mail.com" name="email" required/>
 
                     <label for="assunto">Assunto</label>
                     <select id="assunto" name="assunto">
@@ -137,7 +137,7 @@
 
                     <label for="mensagem">Mensagem</label>
                     <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem.."
-                        style="height:200px"></textarea>
+                        style="height:200px" required></textarea>
 
                     <input type="submit" value="Enviar">
                 </form>
