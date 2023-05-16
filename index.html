@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Portifólio</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Dropdown</a>
+                    <div class="dropdown-content">
+                        <a href="#habil">Habilidades</a>
+                        <a href="#forma">Formação</a>
+                        <a href="#premi">Premiações</a>
+                    </div>
+                </li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="icons-bar">
+        <a href="https://twitter.com/SpongeBob" target="_blank">
+            <div class="twitter"></div>
+        </a>
+        <a href="https://www.paramount.com/operation-sea-change" target="_blank">
+            <div class="website"></div>
+        </a>
+        <a href="https://www.linkedin.com/in/spongebob-squarepants-302b101ab/pt?trk=people-guest_people_search-card" target="_blank">
+            <div class="linkedin"></div>
+        </a>
+        <a href="mailto:spongebob@nickelodeon.com">
+            <div class="email"></div>
+        </a>
+    </div>
+
+    <div class="content">
+        <div style="display: inline-block">
+            <div id="home">
+                <div class="image">
+                    <img src="">
+                </div>
+
+                <div class="title">
+                    <h1>Bob Esponja</h1>
+                    <p>Cozinheiro</p>
+                </div>
+
+            </div>
+
+            <div class="apresentacao">
+                <h2>Sobre Mim</h2>
+                <div class="line">
+                    <p align="justify"> Meu nome é bob tenho um coração bondoso, sou otimista, alegre e
+                        amigável. Moro em uma cidade pequena e submarina, localizada na Fenda do Biquíni.
+                        Trabalho como cozinheiro em um fast food famoso, porém nada refinado.
+                        Nas horas vagas costumo praticar Karatê e soltar bolhas de sabão. Me divirto muito
+                        com meu melhor amigo Patrick caçando águas vivas.
+                    </p>
+                </div>
+            </div>
+
+            <div class="hobby">
+                <div id="bolhasabao"></div>
+                <div id="karate"></div>
+                <div id="cacaaguaviva"></div>
+            </div>
+
+            <div class="formacao">
+                <h2 id="forma">Formação</h2>
+                <ul>
+                    <li>Mestre em Espatulagem, pela UFFB, com conclusão em 2008.</li>
+                    <li>Pós-graduado em Gestão de Chapas Quentes, pela UFFB, com conclusão em 2001.</li>
+                    <li>Graduado em Culinária Baganística, pela UFFB, com conclusão em 1999.</li>
+                    <li>Técnico em Fast-Food, pelo IFFB, com conclusão em 1997.</li>
+                </ul>
+            </div>
+
+            <div class="certificados">
+                <div id="espatula"></div>
+                <div id="chapa"></div>
+                <div id="culinaria"></div>
+                <div id="siricascudo"></div>
+            </div>
+
+            <div class="habilidades">
+                <h2 id="habil">Habilidades</h2>
+                <ul>
+                    <li>Sempre estou pronto.</li>
+                    <li>Extrovertido.</li>
+                    <li>Especialista em frituras.</li>
+                    <li>Inglês nativo.</li>
+                    <li>Português intermediário.</li>
+                </ul>
+            </div>
+
+            <div class="aptidao"></div>
+
+            <div class="borderbottom"></div>
+
+            <div class="premiacoes">
+                <h2 id="premi">Premiações</h2>
+                <p>Premiado como funcionário do mês da Lanchonete Siri Cascudo por mais de 100 vezes.</p>
+            </div>
+
+            <div class="premios"></div>
+
+            <div class="borderbottom"></div>
+
+            <div class="contato">
+                <h1 id="contact"> Contate-me </h1>
+
+                <form>
+                    <label for="fname">Nome</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Seu nome..">
+
+                    <label for="lname">Sobrenome</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Seu sobrenome..">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="emailid" placeholder="fulano@mail.com" name="email" />
+
+                    <label for="assunto">Assunto</label>
+                    <select id="assunto" name="assunto">
+                        <option value="sugestao">Sugestão</option>
+                        <option value="oportunidades">Oportunidades</option>
+                        <option value="outros">Outros</option>
+                    </select>
+
+                    <label for="mensagem">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" placeholder="Escreva sua mensagem.."
+                        style="height:200px"></textarea>
+
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+
+            <div class="borderbottom"></div>
+
+        </div>
+    </div>
+
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 - Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
